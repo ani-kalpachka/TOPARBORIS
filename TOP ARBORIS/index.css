@@ -1,0 +1,399 @@
+/*Common Styles*/
+body {
+  margin: 0;
+  font-size: 17px;
+  background-color: #2e8b57;
+}
+
+*::selection {
+  background-color: lightblue;
+}
+
+section:not(:first-of-type) {
+  background-color: #ebffe8;
+  position: relative;
+  padding: 40px 80px;
+  border: 2px solid white;
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+section:first-of-type {
+  max-width: 100%;
+  border: none;
+  margin-top: 0;
+}
+
+h2 {
+  letter-spacing: 1.5px;
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 60px;
+  color: darkgreen;
+  margin-top: 0;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 70px;
+  background-color: #dd702e;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0px auto;
+  margin-bottom: -20px;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Header Styles*/
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4d4d4d;
+}
+
+#logo img {
+  margin-left: 20px;
+  height: 55px;
+  margin-top: 7px;
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav ul li {
+  margin-right: 30px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #7cb13a;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #d86d2d;
+  cursor: pointer;
+}
+
+.nav-phone-mobile {
+  display: none;
+}
+
+#nav-menu-button {
+  display: none;
+}
+
+.nav-phone {
+  color: #ffff;
+  font-size: 20px;
+}
+
+.nav-phone i {
+  margin-right: 6px;
+}
+
+.nav-phone.mobile {
+  display: none;
+}
+
+.slick-slider {
+  margin-bottom: 30px;
+  margin-top: 69px;
+}
+
+/* About Us Section Styles*/
+#about h2:after {
+  height: 2.5px;
+}
+
+#about .technique {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#about ul li:before {
+  content: "";
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  background: url(./images/bracket-icon.svg) no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+#about ul li {
+  display: flex;
+  padding: 7px 0;
+  align-items: center;
+}
+
+#about ul li:hover:before {
+  transform: scale(1.3, 1.3);
+}
+
+#about ul li:hover {
+  color: #c25e24;
+}
+
+#about ul {
+  max-width: 562px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Services Section Styles*/
+#services ul {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+#services .item {
+  width: 250px;
+  border: 2px solid #2e8b57;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  background-color: #ffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#services .item:hover {
+  background-color: rgb(124, 177, 58, 0.2);
+}
+
+#services ul h5 {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  padding: 0 15px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+#services .item img {
+  height: 220px;
+  object-fit: cover;
+  border-top-right-radius: 27px;
+  border-top-left-radius: 27px;
+}
+
+.item:hover h5 {
+  color: #dd702e;
+}
+
+/* Contacts Section Styles*/
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+.social-icons li {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  align-self: center;
+}
+
+.social-icons p {
+  margin: 5px 0;
+}
+
+.social-icons li i {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.social-icons li i:before {
+  position: absolute;
+  font-size: 27px;
+  width: 20px;
+  text-align: center;
+  color: #dd702e;
+}
+
+.social-icons li .fa-facebook {
+  border: 2px solid #dd702e;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  margin-bottom: 0;
+}
+
+.social-icons li.facebook i:before {
+  margin-top: 5px;
+}
+
+.social-icons li .fa-facebook:hover {
+  background-color: #dd702e;
+}
+
+.social-icons li.facebook:hover i:before {
+  color: #ffff;
+}
+
+.social-icons .facebook a {
+  height: 46px;
+}
+
+#contact ul {
+  margin: 0;
+}
+
+footer {
+  background-color: #4d4d4d;
+  margin-top: 60px;
+  color: #7cb13a;
+}
+
+/* Footer Styles*/
+footer p {
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+
+  /* Mobile Common Styles */
+  section:not(:first-of-type) {
+    max-width: 100%;
+    padding: 40px 20px;
+    border: none;
+    margin-top: 1px;
+  }
+
+  .nav-phone-mobile {
+    display: block;
+    color: #ffff;
+    font-size: 20px;
+    text-align-last: center;
+    background-color: #4d4d4d;
+    margin: 0;
+    padding: 20px 0;
+    border-top: 1px solid #dd702e;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  /* Mobile Header Styles */
+  header {
+    display: block;
+  }
+
+  header {
+    height: 65px;
+  }
+
+  .logo-button-wrapper {
+    margin: 10px 0 5px;
+  }
+
+  #logo img {
+    margin-left: 7px;
+    height: 45px;
+    width: 140px;
+    margin-top: 0;
+  }
+
+  nav {
+    width: 100%;
+    height: 100vh;
+  }
+
+  nav ul {
+    display: none;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    border-bottom: 1px solid #d86d2d;
+    padding: 20px 0;
+    margin-right: 0;
+  }
+
+  nav ul li:first-child {
+    border-top: 1px solid #d86d2d;
+  }
+
+  #nav-menu-button {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    font-size: 25px;
+    color: #d86d2d;
+  }
+
+  .nav-phone:nth-of-type(2) {
+    display: none;
+  }
+
+  .slick-slider {
+    margin-top: 0;
+    height: 400px;
+    padding-top: 0;
+  }
+
+  #home {
+    padding-top: 128px;
+    height: 500px;
+  }
+
+  /* Mobile Services Section Styles*/
+  #services .item {
+    width: 350px;
+  }
+
+  /* Mobile Contacts Section Styles*/
+  .social-icons {
+    flex-flow: column;
+    gap: 50px
+  }
+
+  /* Mobile Footer Section Styles */
+
+  footer {
+    margin-top: 0;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
